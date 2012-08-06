@@ -57,7 +57,6 @@ public class FileUpload extends Thread implements Runnable {
 			try {
 				readStream(in);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} finally {
 			     in.close();
