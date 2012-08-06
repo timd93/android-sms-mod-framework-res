@@ -1,5 +1,5 @@
-android-sms-mod-framework
-=========================
+android-sms-mod-framework-res
+=============================
 
 Automated modding of the Android Framework, in order to enable sms support on Tablets
 
