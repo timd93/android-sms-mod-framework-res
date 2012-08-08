@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
+
     <Button
-        android:id="@+id/readWebpage"
+        android:id="@+id/startActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="startProcess"
-        android:text="Load Webpage" >
+        android:text="Do it!" >
     </Button>
 
     <TextView
@@ -19,4 +19,4 @@
         android:text="Log:" >
     </TextView>
 
-</LinearLayout> 
+</LinearLayout>

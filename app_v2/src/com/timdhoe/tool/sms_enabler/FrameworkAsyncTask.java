@@ -26,7 +26,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.threadshandlers.R;
 import com.timdhoe.tool.sms_enabler.Shell.ShellException;
 
 public class FrameworkAsyncTask extends Activity {
@@ -217,13 +216,14 @@ public class FrameworkAsyncTask extends Activity {
 			super.onPostExecute(result);
 			if (success == "success"){
 				txtStatus.setText(txtStatus.getText() + "Modded framework downloaded successfully \n");
-				//invokeCopyNewFramework();
+				invokeCopyNewFramework();
 			}
 			else {
 				if (counter == 1){
 					txtStatus.setText(txtStatus.getText() + "This framework is not yet previously processed\n" + "Please wait while framework is being processed\n");
 					++counter;
 					try {
+						Thread.sleep(5000);
 						invokeDownload();
 					} catch (Exception e1) {
 						// TODO Auto-generated catch block
